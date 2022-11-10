@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "title": "Watermelon",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-SANDI%E2%95%A0uA.png"
+    },
+    {
+      "id": 102,
+      "title": "Lemon Lime",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0LIMA-LIMNO%E2%95%A0uN.png"
+    },
+    {
+      "id": 103,
+      "title": "Bubblegum Blueberry",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-CHICLE-DE-ARA%E2%95%A0uNDANOS.png"
+    },
+    {
+      "id": 104,
+      "title": "Cola Lemon",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-COLA-LIMO%E2%95%A0uN.png"
+    },
+    {
+      "id": 105,
+      "title": "Honeydew Melon Ice",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-MELO%E2%95%A0uN-DULCE.png"
+    },
+    {
+      "id": 106,
+      "title": "Pina Colada",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-PIN%E2%95%A0aA-COLADA.png"
+    },
+    {
+      "id": 107,
+      "title": "Apple",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-MANZANA.png"
+    },
+    {
+      "id": 108,
+      "title": "Cotton Candy",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/0-ALGODO%E2%95%A0uN-DE-AZU%E2%95%A0uCAR.png"
+    },
+    {
+      "id": 109,
+      "title": "Banana",
+      "price": 10,
+      "img": "https://brooklynpods.es/wp-content/uploads/2022/09/BANANA-2.png"
+    }
+  ]
+}
