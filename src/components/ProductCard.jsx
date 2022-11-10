@@ -1,21 +1,24 @@
 import React from "react";
+import "./productCard.css";
+import Button from "../components/Button";
 
-function ProductCard({characters = []}) {
+function ProductCard({products}) {
     // render() {
     //   const { img, title, price, handleAddToCart } = this.props;
   
       return (
-        <div className="row">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
             {
-                characters.map((item, index) => (
-                    <div key={index} className="col mb-4">
-                        <div>
-                            <img src={item.image} alt="" />
-                            <div className="card-boby">
-                                <h5 className="card-title">{item.name}</h5>
-                                {/* <p>{price}€</p>
-                                <Button onClick={handleAddToCart}>Add to cart</Button> */}
-                            </div>
+                products.map((item, index) => (
+                    <div key={index} className="col">
+                        <div className="card">                            
+                                <img className="card-img-top" src={item.img} alt="" />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title">{item.title}</h5>
+                                    <p className="card-text">{item.price}€</p>
+                                    <Button>Add to cart</Button>
+                                </div>
+                            
                         </div>
                     </div>       
                 ))} 

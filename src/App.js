@@ -4,24 +4,26 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ProductCard from './components/ProductCard';
 
-import products from "./assets/db/products.json";
-import Cart from "./components/Cart";
+
+// import Cart from "./components/Cart"
 
 function App() {
+//Products state
+  const [products, setProducts] = useState([]);
+//Fake API
+  const url = "http://localhost:3001/products";
 
-  const [characters, setCharacters] = useState([]);
+  const fetchProducts = async () => {
+    let request = await fetch(url);
 
-  const inititalUrl = "https://rickandmortyapi.com/api/character";
-
-  const fetchProducts = (url) => {
-    fetch(url)
-    .then(response => response.json())
-    .then(data => setCharacters(data.results))
-    .catch(error => console.log(error))
+    if (request.ok) {
+      let data = await request.json();
+      setProducts(data);
+    }
   }
 
   useEffect(() => {
-    fetchProducts(inititalUrl);
+    fetchProducts();
   }, [])
 
 
@@ -29,8 +31,8 @@ function App() {
     <>
     <NavBar />
 
-    <div className='container mt-5'>
-      <ProductCard characters={characters} />
+    <div className='container mt-5 mb-5'>
+      <ProductCard products={products} />
     </div>
 
     </>
